@@ -18,7 +18,7 @@ Y86-64-Simulator/
 
 ## 测试方法
 
-运行 `python test.py --bin {你的 cpu 可执行文件路径} --save_mid (可选参数，保留测试中间生成的 temp_answer 目录，保留了你的模拟器输出)`
+运行 `python test.py --bin {你的 cpu 可执行文件路径}`
 
 * 如果你的 cpu 可执行文件为 `.cpu`，运行 `python test.py --bin ./cpu`
 
