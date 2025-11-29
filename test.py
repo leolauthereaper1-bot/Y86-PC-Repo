@@ -29,6 +29,8 @@ def main():
             
     res = {file: try_read(f"temp_answer/{file}") for file in os.listdir('temp_answer')}
     answer = {file: try_read(f"answer/{file}") for file in os.listdir('answer')}
+    for name, content in answer.items():
+        print(name)
 
     if not args.save_mid:
         shutil.rmtree('temp_answer')
@@ -54,6 +56,8 @@ def main():
             print("Diff:")
             print(diff_strings(pprint.pformat(rc), pprint.pformat(ra)))
             return
+        else:
+            print(f"right answer for {filename}")
     print("All correct!")
 
 # https://gist.github.com/ines/04b47597eb9d011ade5e77a068389521
